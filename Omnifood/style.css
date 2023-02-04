@@ -1,21 +1,49 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 header{
-    font-size: larger;
-    font-weight: 800;
-    height: ;
+    display: block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    background-color: rgb(24, 92, 194);
+    position: relative;
+    padding: 0px 4.8rem;
+}
+
+a:-webkit-any-link {
+    cursor:pointer;
+    text-decoration:none;
+}
+
+
+.logo{
+    height: 2.2rem;
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 /* Navigation */
 nav{
-    float: right;/*s shifts the omnifood logo */
-    margin: 0;
-    overflow: hidden;
-    text-align: center;
-    padding-right: 15px;
+    display: block;
 }
 nav ul li{
     display: inline-block;
@@ -29,16 +57,6 @@ nav > ul > li > a{
     padding: 0.5em 1em;
 }
 
-.logo-img{
-    float: left;
-    position: relative;
-    margin: 24px 15px 15px 10px;
-}
-
-.navigation{
-    background: #333;
-    overflow: hidden;
-}
 
 nav > ul > button{
     border-radius: 4px;
@@ -48,4 +66,25 @@ nav > ul > button{
     min-height: 40px;
     padding-right: 10px;
     min-width: 30px;
+}
+
+.intro{
+    display: grid;
+    border: #aaa;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+    "left left right right";
+    align-items: center;
+    
+}
+
+.leftintro{
+    grid: left;
+    text-align: center;
+}
+
+.rightintro{
+    grid: right;
 }

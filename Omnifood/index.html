@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"
-    <title>Omnifood- never cook again</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Omnifood- never cook again</title>
 </head>
 <body>
     <!-- this for the header -->
-    <header>
+    <header class="header">
         <div class="navigation">
-            <a href="#"><img class="logo-img" src="./images/omnifood-logo.png" width="130" height="" alt="omnifood logo" align="center"></a>
-            <nav>
-                <ul>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Meals</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Pricing</a></li>
+            <a href="#">
+                <img class="logo" src="./images/omnifood-logo.png" alt="omnifood logo" align="center">
+            </a>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#meals">Meals</a></li>
+                    <li><a href="#testimony">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <button type="button">Try for free</button>
                 </ul>
                 
@@ -25,13 +27,21 @@
         </div>
     </header>
     <!-- this is for the next row after the header-->
+    <section>
     <div class="intro">
         <div class="leftintro">
-            <h1 class="lft-hd">A healthy meal delivered to your door, every single day</h1>
-            <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs</p>
+            <h1 class="lft-hd">A healthy meal <br/> delivered to your door,<br /> every single day</h1>
+            <p class="lft-hd-description">The smart 365-days-per-year food subscription that<br /> will make you eat healthy again. Tailored to your<br /> personal tastes and nutritional needs</p>
             <button type="button">Start eating well</button>
-            <button type="button">Learn more</button>
+            <button type="button">Learn more &darr;</button>
+        </div>
+
+        <div class="rightintro">
+            <img src="./images/hero-min.png" 
+            width="600px" height="600px" 
+            alt="Women enjoying food, meals in storage container and food bowls on a table" />
         </div>
     </div>
+    </section>
 </body>
 </html>
