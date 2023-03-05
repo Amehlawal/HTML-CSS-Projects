@@ -15,6 +15,16 @@ body{
 header{
     display: block;
 }
+button {
+    border-radius: 4px;
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: 20px;
+    min-height: 40px;
+    padding-right: 10px;
+    min-width: 30px;
+}
 
 .header{
     display: flex;
@@ -24,6 +34,7 @@ header{
     background-color: rgb(24, 92, 194);
     position: relative;
     padding: 0px 4.8rem;
+    margin-bottom: 80px;
 }
 
 a:-webkit-any-link {
@@ -67,24 +78,42 @@ nav > ul > button{
     padding-right: 10px;
     min-width: 30px;
 }
-
+/*<!-- intro section */
+h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
 .intro{
-    display: grid;
-    border: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: #aaa;
     padding: 20px 20px 20px 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px;
     grid-template-areas: 
-    "left left right right";
+    "left left right right";*/
+   padding: 0px 100px;
+}
+
+.delivered-meals {
+    display: flex;
     align-items: center;
-    
+    gap: 1.6rem;
+}
+.delivered-imgs {
+    display: flex;
 }
 
-.leftintro{
-    grid: left;
-    text-align: center;
-}
-
-.rightintro{
-    grid: right;
+.delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #aaa;
 }
