@@ -118,7 +118,7 @@ h2 {
     margin: 0 0 16px 0;
 }
 
-/* media queries for header */
+
 @media screen and (max-width: 480px) {
     .btn {
         display: block;
@@ -134,7 +134,18 @@ h2 {
     section {
         padding: 25px 0 15px 0;
     }
-}
-@media screen {
-    
+    .feature {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 16px 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature img {
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px;
+    }
 }
